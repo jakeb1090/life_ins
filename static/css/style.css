@@ -1,0 +1,20 @@
+html, body{
+    background-color: blue;
+
+}
+
+p {
+    color: black;
+}
+
+h1 {
+    color: #126140
+}
+img{
+    float: left;
+    color: gray;
+}
+h3{
+    float: right;
+}
+

@@ -1,0 +1,36 @@
+{% extends "structure.html" %}
+
+<html>
+<head>
+    <title>Sign up</title>
+</head>
+<body>
+{% block main %}
+<p>
+    <div class="container ui">
+    <h1>Sign up Page</h1>
+    <br>
+    <form action="/signup" method="post">
+        <div class="ui large icon input">
+            <input placeholder="Username", name="username", type="text">
+        </div>
+        <br>
+        <div class="ui large icon input">  
+            <input placeholder="Password", name="password", type="password">
+        </div>
+        <br>
+        <div class="ui large icon input">   
+            <input placeholder="Confirm Password", name="password_confirm", type="password">
+        </div>
+        <br>
+        <div class="ui submit button">
+            <input type="submit">
+        </div>
+    </form>
+
+    {{ message }}
+</div>
+{% endblock %}
+</body>
+</html>
+

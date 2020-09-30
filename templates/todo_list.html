@@ -1,0 +1,56 @@
+{% extends "structure.html" %}
+
+<title>Welcome to your To-do list</title>
+<body>
+    {% block main %}
+    <p>
+        <h1>Tasks List</h1>
+    <div class="container ui">
+    <form action="/todo_list" method="post">
+        <br>
+        <input placeholder="Enter Due Date" name="due_date", type="text">
+        <input placeholder="Enter Task" name="task", type="text">
+        <input type="submit">
+    </form>
+    <p>
+    <table class="ui celled table">
+      <thead>
+        <tr>
+          <th>Due Date</th>
+          <th>Task</th>
+        </tr>
+      </thead>
+      <tbody>
+        {%for i in data%}
+        <tr>
+          <td data-label="Due Date">{{ i[1] }}</td>
+          <td data-label="Task">{{i[2]}}</td>
+        </tr>
+        {%endfor%}
+      </tbody>
+    </table>
+  </div>
+ </body>
+    {% endblock %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
