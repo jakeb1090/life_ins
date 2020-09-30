@@ -1,6 +1,7 @@
 {% extends "structure.html" %}
+{% include "nav.html" %}
 
-{% block main %}
+{% block content %}
 <p></p>
 <p></p>
 <br>
@@ -8,37 +9,31 @@
 <br>
 <br>
 <div class="container">
-   
-    <div class="row">
-        
-        <div class="col">
-            <div class="card" style="width: 18rem;">
-                <img src="https://images.unsplash.com/photo-1576089073624-b5751a8f4de9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=50" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Term Life</h5>
-                  <p class="card-text">Term Life has a termination date either 10, 15, or 30 years.  With less premium but has no cash value. 
-                    <br>
-                    <br>Example: Work Life Insurance.</p>
-                  <a href="#" class="btn btn-primary">Learn More</a>
-                </div>
+   <div class="row">
+      <div class="col">
+        <div class="card" style="width: 18rem;">
+            <img src="https://images.unsplash.com/photo-1576089073624-b5751a8f4de9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=50" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Term Life</h5>
+              <p class="card-text">Term Life has a termination date either 10, 15, or 30 years.  With less premium but has no cash value. 
+                <br>
+                <br>Example: Work Life Insurance.</p>
+              <a href="#" class="btn btn-primary">Learn More</a>
             </div>
         </div>
-        
-        <div class="col">
-            <div class="card" style="width: 18rem;">
-                <img src="https://images.unsplash.com/photo-1514415008039-efa173293080?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Whole Life</h5>
-                  <p class="card-text">Whole Life is more permanent with higher premium than term life but it should be long term coverage without having to worry about medical re-examinations and age quote
-                  </p>
-                  <a href="#" class="btn btn-primary">Learn More</a>
-                </div>
-            </div>
-        </div>
+    </div>
     
+    <div class="col">
+        <div class="card" style="width: 18rem;">
+            <img src="https://images.unsplash.com/photo-1514415008039-efa173293080?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Whole Life</h5>
+              <p class="card-text">Whole Life is more permanent with higher premium than term life but it should be long term coverage without having to worry about medical re-examinations and age quote
+              </p>
+              <a href="#" class="btn btn-primary">Learn More</a>
+            </div>
+        </div>
+    </div>
 </div>
-
-
-
 
 {% endblock %}

@@ -1,12 +1,13 @@
 {% extends "structure.html" %}
+<!-- {% include "nav.html" %} -->
 
-<html>
-<head>
-    <title>Sign up</title>
-</head>
+{% include "nav.html" %}
+{% block content %}
 <body>
-{% block main %}
 <p>
+    <br>
+    <br>
+    <br>        
     <div class="container ui">
     <h1>Sign up Page</h1>
     <br>
@@ -30,7 +31,7 @@
 
     {{ message }}
 </div>
-{% endblock %}
 </body>
-</html>
+{% endblock %}
+
 
