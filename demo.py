@@ -1,5 +1,6 @@
 from flask import Flask, render_template, request, redirect, url_for, g, session
 import model
+from model import Movie
 
 
 
@@ -14,11 +15,18 @@ def before_request():
     g.username = None
     if 'username' in session:
         g.username = session['username']
+        
+@app.after_request
+def after_request(response):
+    response.headers.add('Accept-Ranges', 'bytes')
+    return response
 
 
 @app.route('/home', methods = ['GET', 'POST'])
 def home():
-    return render_template("home.html")
+    m = Movie()
+    video = m.play_movie
+    return render_template("home.html", video=video)
 
 @app.route('/', methods = ['GET', 'POST'])
 def login():

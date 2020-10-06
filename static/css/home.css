@@ -7,6 +7,10 @@ header {
   overflow: hidden;
 }
 
+h1 .display-3{
+  font-size: 38;
+}
+
 header video {
   position: absolute;
   top: 50%;
